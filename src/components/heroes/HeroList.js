@@ -9,10 +9,11 @@ const HeroList = ({publisher}) => {
     // const heroes = getHeroesByPublisher(publisher);
 
     return (
-        <div className="hero__list">
+        <div className="hero__list animate__animated animate__fadeIn">
             {
                 heroes.map(h => (
-                    <HeroCard key={h.id}
+                    <HeroCard 
+                        key={h.id}
                         {...h}
                     />
                 ))
